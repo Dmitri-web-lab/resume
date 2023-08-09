@@ -1,0 +1,33 @@
+@media (max-width: 650px) {
+h1{
+    font-size: 35px;
+}
+.position {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.head{
+    width: 400px;
+    margin-left: 15px;
+}
+.live{
+    display: flex;
+    flex-direction: column;
+}
+.hobby{
+    margin-left: 130px;
+}
+.expiriance {
+    margin-left: 107px;
+}
+#btnReserve {
+    left: 220px;
+    top: 60px;
+}
+#form {
+    top: 90px;
+    left: 20.5%;
+}
+}

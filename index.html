@@ -7,29 +7,37 @@
     <meta name="keywords" content="Dmitry, cv, resume">
     <meta name="description" content="Это сайт - резюме Дмитрия Дворникова">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="devace.css">
+    <link rel="stylesheet" href="animation.css">
     <title>Dmitry Resume</title>
 </head>
 <body>
-    <div class="border">
+    <div style="background-image: url(https://w.forfun.com/fetch/06/06b956262463332ff82140c3b5a3f057.jpeg);width:100%;height:100%;background-repeat:no-repeat;">
         <div class="position">
-    <img src="photo_user.jpg" alt="user" width="60%" class="photo_user">
+    <img src="photo_user.jpg" alt="user" width="300px" class="photo_user">
+            <div class="head">
     <h1>Дмитрий Дворников</h1>
     <p>Я участник курса по основам <strong>HTML</strong>, <strong>CSS</strong> и <strong>Javascript</strong></p>
     <p>Я люблю <em>гулять в парке, читать фантастику и программировать</em></p>
-    <p class="paragraph">Список социальных сетей:</p>
-             <div Class="Btn_social">
-    <a href="https://vk.com/id536105256" target="_blank"><img src="../icons/icon_vk1.png" alt="vk" width="30px"></a>
-    <a href="https://instagram.com/dimitry_tvoi034?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../icons/instagram.png" alt="instagramm" width="30px"></a>
-    <a href="@UserProgrammer" target="_blank"><img src="../icons/тг.png" alt="telegram" width="30px"></a>
-             </div>
-         </div> 
+    <div Class="Btn_social">
+        <a href="https://vk.com/id536105256" target="_blank"><img src="../icons/icon_vk1.png" alt="vk" width="30px"></a>
+        <a href="https://instagram.com/dimitry_tvoi034?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../icons/instagram.png" alt="instagramm" width="30px"></a>
+        <a href="@UserProgrammer" target="_blank"><img src="../icons/тг.png" alt="telegram" width="30px"></a>
+                </div> 
+                <button id="btnFirst">Связаться со мной</button>
+        </div>
+         </div>
+         <div class="live">
+            <div class="hobby">
          <h2>Мои хобби:</h2>
-         <ul>
-          <li>Путешествия</li>
-          <li>Чтение книг</li>
-          <li>Прогулки</li>
-          <li>ММА</li>
-         </ul> 
+         
+          <div><img src="../iconsHobby/travel.png" alt="путешествия" width="55px">Путешествия</div>
+          <div><img src="../iconsHobby/read.png" alt="книги" width="80px">Чтение книг</div>
+          <div><img src="../iconsHobby/wintersport.png" alt="лыжи" width="70px">Прогулки на горных лыжах</div>
+          <div><img src="../iconsHobby/photo.png" alt="фото" width="70px">Фотография</div>
+          
+        </div>
+        <div class="expiriance">
          <h2>Опыт работы:</h2>
          <table>
             <thead>
@@ -41,13 +49,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Завод "Ротор"</td>
+                    <td>АО "Газэнергосервис"</td>
                     <td>Инженер</td>
                     <td>2022-сейчас</td>
                 </tr>
             </tbody>
          </table>
-         <h2>Связаться со мной</h2>
+         </div>
+        </div>
+            <button id="btnReserve">Связаться со мной</button>
+            <div id="form">
+                <img src="https://udalenie-derevev-msk.ru/images/moi/o.png" alt="list" width="80px">
         <form action="/">
             <div>
             <label for="name">Ваше имя:</label>
@@ -62,9 +74,16 @@
                 <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
                 </div>
             <div>
-                <input type="submit" value="Отправить!">
+                <input type="submit" value="Отправить!" class="btn">
             </div>
-        </form> 
-    </div>
+        </form>
+        </div>
+        <div class="footer">
+            <div>Дворников Дмитрий Павлович</div>
+            <div>Участник курса по HTML, CSS и Javascript</div>
+            <div>2023 год</div>
+        </div>
+        </div>
+    <script src="app.js"></script>
 </body>
 </html>
